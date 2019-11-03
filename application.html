@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BC YOUNG MINDS EDUCATION ASSOCIATION</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+    <!-- Icon fonts-->
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+    <!-- Lightbox CSS-->
+    <link rel="stylesheet" href="vendor/lightbox2/css/lightbox.min.css">
+    <!-- Leaflet CSS-->
+    <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png">
+
+  </head>
+  <body>
+
+    <!-- navbar-->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg py-lg-0">
+          <div class="container"><a href="index.html" class="navbar-brand text-uppercase font-weight-bold">卑诗省青少年教育协会</a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right small"><span class="text-uppercase mr-2">Menu</span><i class="fas fa-bars"></i></button>
+            
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto d-lg-flex align-items-lg-center">
+                <li class="nav-item"><a href="index.html" class="nav-link font-weight-bold 
+                  text-uppercase px-lg-3 py-lg-4 active">主页</a>
+                </li>
+                <li class="nav-item"><a href="about.html" class="nav-link font-weight-bold 
+                  text-uppercase px-lg-3 py-lg-4">关于我们</a>
+                </li>
+                <li class="nav-item dropdown"><a id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" 
+                  aria-expanded="false" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4 dropdown-toggle">活动详情</a>
+                  <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu mt-0">
+                    <a href="current.html" class="dropdown-item small text-uppercase">最新资讯</a>
+                    <a href="history.html" class="dropdown-item small text-uppercase">精彩历史</a>
+                </li>
+                <li class="nav-item"><a href="application.html" class="nav-link font-weight-bold 
+                  text-uppercase px-lg-3 py-lg-4">会员申请</a>
+                </li>
+                <li class="nav-item"><a href="contact.html" class="nav-link font-weight-bold 
+                  text-uppercase px-lg-3 py-lg-4">联系我们</a>
+                </li>
+         
+                <li class="nav-item dropdown"><a id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" 
+                  aria-expanded="false" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4 dropdown-toggle">Language</a>
+                  <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu mt-0">
+                  <a href="index_EN.html" class="dropdown-item small text-uppercase">English</a>
+                  <a href="index.html" class="dropdown-item small text-uppercase">简体中文</a>
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+  
+
+
+    <hr class="container">
+    <section>
+      <div class="container">
+        <h4 class="mb-4">会员申请</h4>
+        <p>卑诗省青少年教育协会（以下简称“协会”）会员为个人会员。个人会员包括成人会员和学生会员。会员期限一年。</p>
+
+        <h5>成人会员入会条件：</h5>
+          <ol>
+            <li>有加入协会的意愿，遵守协会的规定。</li>
+            <li>热心青少年教育事业，履历清白无犯罪记录。</li>
+            <li>积极支持本会工作，乐于参与义工工作或从事协会各项活动与管理。</li>
+          </ol>
+
+        <h5>学生会员入会条件：</h5>
+          <ol>
+            <li>有加入协会的意愿，遵守协会的规定。</li>
+            <li>K-G12在校学生，乐于参与协会各项活动。</li>
+            <li>学生会员由家长代为申请。</li>
+          </ol> 
+
+        <h5>入会程序</h5>
+          <ol>
+            <li>分别填列入会申请者个人信息</li>
+            <li>报名参加协会活动即成为协会会员</li>
+          </ol>  
+        
+        <br>
+        <h5>会员申请表格：</h5>
+        <p><i>会员申请：请依要求，填写并提交以下申请者个人信息。谢谢！</i></p> 
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-2">
+              <label for="p_name">家长姓名</label>
+              <input type="text" class="form-control" id="p_name" required>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="is_p_member">家长是否申请成人会员</label>
+              <select id="is_p_member" class="form-control" required>
+                <option selected>是</option>
+                <option>否</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="phone">手机</label>
+              <input type="phone" class="form-control" id="phone" required>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="wechat">微信</label>
+              <input type="text" class="form-control" id="wechat">
+            </div>
+          </div>  
+
+          <div class="form-row">
+            <div class="form-group col-md-3">
+              <label for="email">邮箱</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group col-md-5">
+              <label for="address">家庭地址</label>
+              <input type="text" class="form-control" id="address">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label>学生会员1：</label>
+            <div class="form-group col-md-2">
+              <label for="s1_name">姓名</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-1">
+              <label for="s1_gender">性别</label>
+              <select id="s1_gender" class="form-control">
+                <option selected>男</option>
+                <option>女</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="s1_school">所在学校</label>
+              <input type="text" class="form-control" id="s1_school">
+            </div>
+            <div class="form-group col-md-1">
+              <label for="s1_grade">所在年级</label>
+              <input type="text" class="form-control" id="s1_grade">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="s1_program">报名活动内容</label>
+              <input type="text" class="form-control" id="s1_program" >
+            </div>
+          </div>  
+
+          <div class="form-row">
+            <label>学生会员2：</label>
+            <div class="form-group col-md-2">
+              <label for="s2_name">姓名</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-1">
+              <label for="s2_gender">性别</label>
+              <select id="s2_gender" class="form-control">
+                <option selected>男</option>
+                <option>女</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="s2_school">所在学校</label>
+              <input type="text" class="form-control" id="s2_school">
+            </div>
+            <div class="form-group col-md-1">
+              <label for="s2_grade">所在年级</label>
+              <input type="text" class="form-control" id="s2_grade">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="s2_program">报名活动内容</label>
+              <input type="text" class="form-control" id="s2_program" >
+            </div>
+          </div>  
+
+          <div class="form-row">
+            <label>学生会员3：</label>
+            <div class="form-group col-md-2">
+              <label for="s3_name">姓名</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-1">
+              <label for="s3_gender">性别</label>
+              <select id="s3_gender" class="form-control">
+                <option selected>男</option>
+                <option>女</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="s3_school">所在学校</label>
+              <input type="text" class="form-control" id="s3_school">
+            </div>
+            <div class="form-group col-md-1">
+              <label for="s3_grade">所在年级</label>
+              <input type="text" class="form-control" id="s3_grade">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="s3_program">报名活动内容</label>
+              <input type="text" class="form-control" id="s3_program" >
+            </div>
+          </div>  
+
+          <div class="form-row">
+            <button class="btn btn-primary" onclick="myFunction()">Submit</button>
+          </div>
+
+          <script>
+            function myFunction() {
+              var data = {
+                'age': 123,
+                'name': 'chao zhang'
+              }
+              var r = 90;
+              alert('Register Sucessfully');
+              const nodemailer = require('nodemailer');
+
+              let transporter = nodemailer.createTransport({
+                  host: 'gmail.google.com',
+                  port: 465,
+                  secure: true,
+                  auth: {
+                  user: 'raidenchao@gmail.com', //邮箱的账号
+                  pass: 'Zc1994724.'//邮箱的密码
+                  }
+              });
+
+               let mailOptions = {
+                  from: '"Fred Foo" <raidenchao@gmail.com>', //邮件来源
+                  to: 'raidenchao@gmail.com', //邮件发送到哪里，多个邮箱使用逗号隔开
+                  subject: 'Hello ✔', // 邮件主题
+                  text: 'Hello world ?', // 存文本类型的邮件正文
+                  html: '<b>Hello world ?</b>' // html类型的邮件正文
+              };
+
+              transporter.sendMail(mailOptions, (error, info) => {
+                  if (error) {
+                  return console.log(error);
+                  }
+                  console.log('Message %s sent: %s', info.messageId, info.response);
+              });
+            }
+          </script>
+
+        </form>
+
+      
+      </div>
+    </section>
+
+    <hr class="container">
+    <footer class="page-footer font-small blue">
+      <div class="footer-copyright text-center py-3">© 2019 Copyright: BC YOUNG MINDS EDUCATION ASSOCIATION.</div>
+    </footer>
+
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/lightbox2/js/lightbox.min.js"></script>
+    <script src="vendor/leaflet/leaflet.js"></script>
+    <script src="js/front.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html>

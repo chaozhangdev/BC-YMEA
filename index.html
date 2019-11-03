@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BC YOUNG MINDS EDUCATION ASSOCIATION</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+    <!-- Icon fonts-->
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+    <!-- Lightbox CSS-->
+    <link rel="stylesheet" href="vendor/lightbox2/css/lightbox.min.css">
+    <!-- Leaflet CSS-->
+    <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png">
+
+  </head>
+  <body>
+
+    <!-- navbar-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg py-lg-0">
+        <div class="container"><a href="index.html" class="navbar-brand text-uppercase font-weight-bold">卑诗省青少年教育协会</a>
+          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right small"><span class="text-uppercase mr-2">Menu</span><i class="fas fa-bars"></i></button>
+          
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto d-lg-flex align-items-lg-center">
+              <li class="nav-item"><a href="index.html" class="nav-link font-weight-bold 
+                text-uppercase px-lg-3 py-lg-4 active">主页</a>
+              </li>
+              <li class="nav-item"><a href="about.html" class="nav-link font-weight-bold 
+                text-uppercase px-lg-3 py-lg-4">关于我们</a>
+              </li>
+              <li class="nav-item dropdown"><a id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" 
+                aria-expanded="false" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4 dropdown-toggle">活动详情</a>
+                <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu mt-0">
+                  <a href="current.html" class="dropdown-item small text-uppercase">最新资讯</a>
+                  <a href="history.html" class="dropdown-item small text-uppercase">精彩历史</a>
+              </li>
+              <li class="nav-item"><a href="application.html" class="nav-link font-weight-bold 
+                text-uppercase px-lg-3 py-lg-4">会员申请</a>
+              </li>
+              <li class="nav-item"><a href="contact.html" class="nav-link font-weight-bold 
+                text-uppercase px-lg-3 py-lg-4">联系我们</a>
+              </li>
+       
+              <li class="nav-item dropdown"><a id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" 
+                aria-expanded="false" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4 dropdown-toggle">Language</a>
+                <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu mt-0">
+                <a href="index_EN.html" class="dropdown-item small text-uppercase">English</a>
+                <a href="index.html" class="dropdown-item small text-uppercase">简体中文</a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+  <hr class="container">
+ 
+  <div class="gallery container" id="gallery">
+ 
+    <div class="mb-3 pics animation all 2">
+      <img class="img-fluid" src="img/1.jpg" alt="Card image cap">
+    </div>
+
+    <div class="mb-3 pics animation all 1">
+      <img class="img-fluid" src="img/4.jpg" alt="Card image cap">
+    </div>
+   
+    <div class="mb-3 pics animation all 1">
+      <img class="img-fluid" src="img/3.jpg" alt="Card image cap">
+    </div>
+   
+    <div class="mb-3 pics animation all 2">
+      <img class="img-fluid" src="img/2.jpg" alt="Card image cap">
+    </div>
+ 
+    <div class="mb-3 pics animation all 2">
+      <img class="img-fluid" src="img/5.jpg" alt="Card image cap">
+    </div>
+   
+    <div class="mb-3 pics animation all 1">
+      <img class="img-fluid" src="img/6.jpg" alt="Card image cap">
+    </div>
+  
+  </div>
+  <!-- Grid row -->
+
+    <script>
+      $(function() {
+      var selectedClass = "";
+      $(".filter").click(function(){
+      selectedClass = $(this).attr("data-rel");
+      $("#gallery").fadeTo(100, 0.1);
+      $("#gallery div").not("."+selectedClass).fadeOut().removeClass('animation');
+      setTimeout(function() {
+      $("."+selectedClass).fadeIn().addClass('animation');
+      $("#gallery").fadeTo(300, 1);
+      }, 300);
+      });
+      });
+    </script>
+  </div>
+
+    <hr class="container">
+    <footer class="page-footer font-small blue">
+      <div class="footer-copyright text-center py-3">© 2019 Copyright: BC YOUNG MINDS EDUCATION ASSOCIATION.</div>
+    </footer>
+
+    <!-- JavaScript files-->
+    <script src="js/translate.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/lightbox2/js/lightbox.min.js"></script>
+    <script src="vendor/leaflet/leaflet.js"></script>
+    <script src="js/front.js"></script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html>
